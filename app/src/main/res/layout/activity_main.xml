@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_pink"
+
+    tools:context=".MainActivity">
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/sampleimage"/>
+    <TextView
+            android:id="@+id/newUserTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="Are you new to the app?"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/newUserTextView"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            android:textColor="@color/background_pink"
+            android:backgroundTint="@color/button_pink"
+            android:textSize="20dp"/>
+
+    <TextView
+            android:id="@+id/notNewUserTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerButton"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"
+            android:text="If not, login"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notNewUserTextView"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Login"
+            android:textColor="@color/background_pink"
+            android:backgroundTint="@color/button_pink"
+            android:textSize="20dp"/>
+</RelativeLayout>

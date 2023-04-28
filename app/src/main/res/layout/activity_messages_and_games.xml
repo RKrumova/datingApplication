@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background_pink"
         tools:context=".MainActivity2">
         <!-- Banner image -->
     <ImageView
@@ -13,9 +14,9 @@
             android:layout_height="50dp"
             android:src="@drawable/icon1"/>
 
-        <!-- Scrollable icon container -->
+        <!-- Scrollable message-icon container -->
     <HorizontalScrollView
-            android:id="@+id/icon_container_scroll"
+            android:id="@+id/message_icon_container_scroll"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/banner_image">
@@ -53,14 +54,20 @@
                     android:src="@drawable/icon1"/>
         </LinearLayout>
     </HorizontalScrollView>
-
+    <!-- Scrollable container for messages and game icons -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_icon_container_scroll"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
         <!-- Scrollable message container -->
         <ScrollView
                 android:id="@+id/messages_container_scroll"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
                 android:layout_below="@+id/icon_container_scroll"
-                android:layout_weight="8">
+                android:layout_weight="0.05"
+                android:layout_height="match_parent">
             <!-- samples -->
             <LinearLayout
                     android:id="@+id/messages_container"
@@ -95,18 +102,19 @@
         <ScrollView
                 android:id="@+id/game_icons_scroll"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="match_parent"
                 android:layout_below="@+id/messages_container_scroll"
-                android:layout_weight="2">
+                android:layout_weight="0.2">
 
-        <LinearLayout
-                android:id="@+id/game_icons_container"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <LinearLayout
+                    android:id="@+id/game_icons_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-        <!-- game icon views here -->
-        </LinearLayout>
+                <!-- game icon views here -->
+            </LinearLayout>
         </ScrollView>
+    </LinearLayout>
 
     </RelativeLayout>

@@ -40,7 +40,16 @@ public class Chat {
     // other methods
     public void addMessage(Message message) {
         this.messages.add(message);
+/*        // Send a notification to the receiver that they have a new message
+        if (message.getReceiver().equals(this.user1)) {
+            Notification notification = new Notification(user1);
+            notification.sendNotification(this.user1, "You have a new message from " + message.getSender().getUsername());
+        } else if (message.getReceiver().equals(this.user2)) {
+            Notification notification = new Notification(user);
+            notification.sendNotification(this.user2, "You have a new message from " + message.getSender().getUsername());
+        }*/
     }
+
 
     public int getMessageCount() {
         return this.messages.size();

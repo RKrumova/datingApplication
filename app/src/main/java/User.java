@@ -1,12 +1,22 @@
 import java.util.List;
 
 public class User {
+
+
     private String name;
     private int age;
     private String gender;
     private String location;
     private List<String> interests;
     private String profilePicture;
+    public User(String name, int age, String gender, String location, List<String> interests, String profilePicture) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.location = location;
+        this.interests = interests;
+        this.profilePicture = profilePicture;
+    }
     public String getName() {
         return name;
     }

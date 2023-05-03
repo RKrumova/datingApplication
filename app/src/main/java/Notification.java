@@ -4,10 +4,21 @@ public class Notification {
     private String title;
     private String message;
     private Date timestamp;
+    private final User user;
+    public Notification(User user) {
 
-    public Notification(String title, String message) {
+        this.user = user;
+    }
+
+    public void sendNotification(User user, String message) {
+        // Send a notification to the user with the given message
+        // You can use a third-party library like Firebase Cloud Messaging (FCM) or Amazon SNS to send push notifications
+        // Alternatively, you can use an email or SMS service to send notifications to users who have opted in
+    }
+    public Notification(String title, String message, User user) {
         this.title = title;
         this.message = message;
+        this.user = user;
         this.timestamp = new Date();
     }
 

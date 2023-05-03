@@ -1,5 +1,6 @@
 import android.location.Location;
 
+//import javax.xml.stream.Location;
 import java.util.ArrayList;
 
 public class Match {

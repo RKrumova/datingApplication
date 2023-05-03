@@ -4,10 +4,18 @@ import androidx.annotation.RequiresApi;
 import java.time.LocalDateTime;
 
 public class Message {
+
     private User sender;
     private User receiver;
     private String text;
     private LocalDateTime timestamp;
+    public Message(User sender, User receiver, String text, LocalDateTime timestamp) {
+        this.sender = sender;
+        this.receiver = receiver;
+        this.text = text;
+        this.timestamp = timestamp;
+    }
+
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public Message(User sender, User receiver, String text) {

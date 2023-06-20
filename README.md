@@ -10,7 +10,6 @@ The following technologies were used to create this application:
 
 - [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/ultimate/) - an integrated development environment (IDE) for Java development.
 - [Firebase](https://firebase.google.com/) - a mobile and web application development platform.
-- [ChatGPT](https://openai.com/blog/chat-gpt-3/) - a natural language processing (NLP) model that powers the chat feature of the app.
 - [Cucumber](https://cucumber.io/) - a testing tool used for behavior-driven development (BDD) testing.
 - [StarUML](http://staruml.io/) - a software modeling tool used to create UML diagrams for the app's architecture.
 
